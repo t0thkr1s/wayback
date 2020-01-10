@@ -35,9 +35,9 @@ python3 setup.py install
 python3 wayback.py -t [target_domain]
 ```
 
-## Example
+## Screenshot
 
-![Github Example](screenshots/github_example.png)
+![Screenshot](https://i.imgur.com/NBYHmzX.png)
 
 ### Disclaimer
 
