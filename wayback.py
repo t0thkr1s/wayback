@@ -2,11 +2,21 @@
 
 import argparse
 import json
+import os
+from datetime import datetime
+
 import progressbar
 import requests
 import tabulate
 from colorama import Fore, Style
-from datetime import datetime
+
+banner = '''
+                        __               __  
+ _    __ ___ _  __ __  / /  ___ _ ____  / /__
+| |/|/ // _ `/ / // / / _ \/ _ `// __/ /  '_/
+|__,__/ \_,_/  \_, / /_.__/\_,_/ \__/ /_/\_\ 
+              /___/                          
+'''
 
 success = Style.BRIGHT + '[ ' + Fore.GREEN + '✔' + Fore.RESET + ' ] ' + Style.RESET_ALL
 information = Style.BRIGHT + '[ ' + Fore.YELLOW + '✻' + Fore.RESET + ' ] ' + Style.RESET_ALL
@@ -102,4 +112,6 @@ def main(arguments):
 
 
 if __name__ == '__main__':
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(banner)
     main(args())
